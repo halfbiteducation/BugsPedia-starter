@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:background="#7986CB"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:id="@+id/linlayout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/common_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Common Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse" />
+
+            <TextView
+                android:id="@+id/scientific_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scientific Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/classification_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Classification"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/danger_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Danger Level"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+
+    <RatingBar
+        android:id="@+id/detail_danger_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="10"
+        android:paddingLeft="5dp"
+
+         />
+</LinearLayout>
